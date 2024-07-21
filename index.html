@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+
+    <form id="formulario">
+        <label for="valor1">Valor 1:</label>
+        <input type="number" id="valor1" name="valor1" required>
+
+        <label for="operacao">Operação:</label>
+        <select id="operacao" name="operacao" required>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+
+        <label for="valor2">Valor 2:</label>
+        <input type="number" id="valor2" name="valor2" required>
+
+        <button type="button" onclick="calcularResultado()">Calcular</button>
+    </form>
+
+    <div id="resultado">
+        <h2>Resultado:</h2>
+        <p id="valorCalculado"></p>
+        
+    </div>
+
+    <script src="Resultado.js"></script>
+</body>
+</html>
